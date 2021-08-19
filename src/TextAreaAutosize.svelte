@@ -10,7 +10,7 @@
 <div class="container">
 	<pre
 		aria-hidden="true"
-		style="min-height: {minHeight}; max-height: {maxHeight}; width: min(400px, 90vw)"
+		style="min-height: {minHeight}; max-height: {maxHeight}; max-width: 400px"
 	>{value + '\n'}</pre>
 
 	<textarea bind:value></textarea>	

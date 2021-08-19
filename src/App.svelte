@@ -13,7 +13,28 @@ var handleSubmit = async (e) => {
     }
 }
 </script>
+<svelte:head>
+    <!-- HTML Meta Tags -->
+    <title>Bad words filter</title>
+    <meta name="description" content="censored your aggressively typed shit to make it look decent. Made by svelte">
 
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://badwordsfilter.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bad words filter">
+    <meta property="og:description" content="censored your aggressively typed shit to make it look decent. Made by svelte">
+    <meta property="og:image" content="https://i.pinimg.com/originals/89/c6/cb/89c6cb978c8e381c94fedf2ab0686b30.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="badwordsfilter.netlify.app">
+    <meta property="twitter:url" content="https://badwordsfilter.netlify.app/">
+    <meta name="twitter:title" content="Bad words filter">
+    <meta name="twitter:description" content="censored your aggressively typed shit to make it look decent. Made by svelte">
+    <meta name="twitter:image" content="https://i.pinimg.com/originals/89/c6/cb/89c6cb978c8e381c94fedf2ab0686b30.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+</svelte:head>
 <main>
 	<section>
 		<h1 class="title">Bad words filter</h1>
@@ -42,6 +63,11 @@ var handleSubmit = async (e) => {
 </main>
 
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 :global(body) {
     background-color: #e64c6d;
     position: relative;
@@ -53,21 +79,24 @@ var handleSubmit = async (e) => {
 	font-size: 50px;
 	text-align: center;
 	color: #dbd96e;
+    margin-bottom: 30px;
 }
 main {
     display: grid;
     place-items: center;
     min-height: 100vh;
+    padding: 10px;
 }
 .inputs_container{
 	background-color: #ffffff34;
-	padding: 1px 20px 15px 20px;
+    padding: 10px;
 
 }
 section h1 {
     font-family: helvetica;
     font-weight: 900;
     color: #6b0935;
+    margin: 10px 0;
 }
 
 .inputs {
@@ -96,7 +125,7 @@ button {
 p {
     white-space: pre-wrap;
     text-align: left;
-	width: min(400px, 90vw);
+    max-width: 450px;
     display: block;
     font: normal 20px/30px Monaco, Monospace !important;
     color: #CFDBEC;
