@@ -124,4 +124,9 @@ footer {
     width: 100vw;
     text-align: center;
 }
+@media only screen and (max-width: 500px) {
+    p {
+        max-width: 95vw;
+    }
+}
 </style>
