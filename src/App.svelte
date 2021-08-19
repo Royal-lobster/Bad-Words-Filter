@@ -29,7 +29,7 @@ var handleSubmit = async (e) => {
 		</div>
 
 		<h1>
-			Filtered Test:
+			Filtered Text:
 		</h1>
 		<p>
 			{output}
